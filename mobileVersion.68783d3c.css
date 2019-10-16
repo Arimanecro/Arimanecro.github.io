@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "KreepTown";
+  src: url("/KreepTown.25b3a7d3.eot?#iefix") format("embedded-opentype"),
+    url("/KreepTown.d4effa9e.woff") format("woff"),
+    url("/KreepTown.6c76ade9.ttf") format("truetype"),
+    url("/KreepTown.6230b60e.svg#KreepTown") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ZOMBIESSTATION";
+  src: url("/ZOMBIESSTATION.d56de1f0.eot?#iefix") format("embedded-opentype"),
+    url("/ZOMBIESSTATION.54493a18.woff") format("woff"),
+    url("/ZOMBIESSTATION.26d988f5.ttf") format("truetype"),
+    url("/ZOMBIESSTATION.be1530ba.svg#ZOMBIESSTATION") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "B52";
+  src: url("/b52.79ef4533.eot");
+  src: url("/b52.93b32e9d.woff") format("woff"),
+    url("/b52.ae3f4a77.ttf") format("truetype"), url("/b52.d43f3201.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=/mobileVersion.68783d3c.css.map */

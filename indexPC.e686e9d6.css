@@ -1,0 +1,990 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smooth: always;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  outline: none;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  list-style-position: inside;
+  list-style-image: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: 400px;
+  background: #446274;
+}
+
+/* Graveyard */
+#graveyard {
+  width: 1300px;
+  height: 400px;
+  margin: 0 auto;
+  background: url(/bg_best.881e48c2.png) no-repeat;
+  position: relative;
+}
+#coffin {
+  width: 167px;
+  height: 115px;
+  background: url(/coffin.1ef27411.png) no-repeat;
+  position: absolute;
+  right: 262px;
+  bottom: 33px;
+  z-index: 2;
+}
+#ghost {
+  width: 77px;
+  height: 148px;
+  background: url(/ghost.9fa94348.png) no-repeat;
+  position: absolute;
+  right: 291px;
+  bottom: 106px;
+  transition: all ease-out;
+  animation: ghost 4s linear infinite;
+}
+
+#grass,
+#mob_grass {
+  width: 100%;
+  height: 39px;
+  background: url(/grass.8ea66717.jpg);
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+}
+
+.wizard_appearing,
+.wizard_idle,
+.wizard_attack {
+  width: 98px;
+  height: 109px;
+  position: absolute;
+  left: 10px;
+  will-change: contents;
+}
+.wizard_attack {
+  width: 160px;
+  height: 109px;
+}
+@keyframes wizard_appearance {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -400px;
+  }
+}
+@keyframes wizard_fire_idle {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -500px;
+  }
+}
+@keyframes wizard_purple_idle {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -498px;
+  }
+}
+@keyframes wizard_ice_idle {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -503px;
+  }
+}
+@keyframes wizard_fire_attack {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -795px;
+  }
+}
+@keyframes wizard_purple_attack {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -870px;
+  }
+}
+@keyframes wizard_ice_attack {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -886px;
+  }
+}
+.wizard_ice {
+  bottom: 35px;
+}
+.wizard_fire {
+  bottom: 32px;
+}
+.wizard_purple {
+  bottom: 32px;
+}
+
+.wizard_purple_appearing {
+  background: url("/appearing.8ed6ef99.png") no-repeat;
+}
+.wizard_purple_idle {
+  background: url("/idle.a8ed585c.png") no-repeat;
+}
+.wizard_purple_attack {
+  background: url("/attack.69639980.png") no-repeat;
+}
+
+.wizard_fire_appearing {
+  background: url("/appearing.fa2ecb85.png") no-repeat;
+}
+.wizard_fire_idle {
+  background: url("/idle.2ceac37f.png") no-repeat;
+}
+.wizard_fire_attack {
+  background: url("/attack.b4f4296b.png") no-repeat;
+}
+
+.wizard_ice_appearing {
+  background: url("/appearing.b6889ca1.png") no-repeat;
+}
+.wizard_ice_idle {
+  background: url("/idle.d44e1fc4.png") no-repeat;
+}
+.wizard_ice_attack {
+  background: url("/attack.c355eb66.png") no-repeat;
+}
+
+#portal {
+  width: 196px;
+  height: 198px;
+  will-change: transform;
+  background: url("/portal.500dc5af.png") no-repeat;
+  position: absolute;
+  left: 190px;
+  bottom: 20px;
+  transform: scale(0);
+  transform-origin: center;
+  animation: portal 2s linear forwards infinite, portalAppearing 2s linear;
+}
+.character {
+  width: 58px;
+  height: 113px;
+  transform: scale(0);
+  transform-origin: 100px 100px;
+  will-change: transform;
+  position: absolute;
+  z-index: 1;
+  left: 270px;
+  bottom: 80px;
+  transition: all ease;
+}
+#golemIce {
+  background: url("/golem_ice_running.a3f43e26.png") no-repeat;
+  background-position-y: 30px;
+}
+#golemSwamp {
+  background: url("/golem_swamp_running.29c21a58.png") no-repeat;
+  background-position-y: 30px;
+}
+#golemLava {
+  background: url("/golem_lava_running.a37c9019.png") no-repeat;
+  background-position-y: 30px;
+}
+#goblin {
+  background: url("/goblin_running.ee5ae97d.png") no-repeat;
+  background-position-y: 30px;
+}
+#orc {
+  background: url("/orc_running.f55fb520.png") no-repeat;
+  background-position-y: 30px;
+}
+#troll {
+  background: url("/troll_running.598607d7.png") no-repeat;
+  background-position-y: 30px;
+}
+#fallenAngel {
+  background: url("/fallenangel_one_running.7555c4b7.png") no-repeat;
+  background-position-y: 30px;
+}
+#reaper {
+  width: 65px;
+  background: url("/reaper_running.2b517245.png") no-repeat;
+  background-position-y: 30px;
+}
+.sign {
+  width: 29px;
+  height: 29px;
+  margin: 0 auto;
+  position: relative;
+}
+.js {
+  background: url(/js.800817a2.jpg) no-repeat;
+  background-size: contain;
+}
+.node {
+  background: url(/node.49bece38.png) no-repeat;
+  background-size: contain;
+}
+.express {
+  background: url(/express.6576637f.png) no-repeat;
+  background-size: contain;
+}
+.react {
+  background: url(/react.498579ad.png) no-repeat;
+  background-size: contain;
+}
+.pwa {
+  background: url(/pwa.327ef8a6.png) no-repeat center;
+  background-size: contain;
+}
+.ts {
+  background: url(/ts.30424785.jpg) no-repeat;
+  background-size: contain;
+}
+.php {
+  background: url(/php.4a69d658.png) no-repeat;
+  background-size: contain;
+}
+.mongo {
+  background: url(/mongo.85ead7a1.jpg) no-repeat;
+  background-size: contain;
+}
+.firebase {
+  background: url(/firebase.b185f0bf.png) no-repeat;
+  background-size: contain;
+}
+.mysql {
+  background: url(/mysql.0108374b.jpg) no-repeat;
+  background-size: contain;
+}
+.graphql {
+  background: url(/GraphQL.5189d76b.png) no-repeat;
+  background-size: contain;
+}
+.hand_one {
+  width: 56px;
+  height: 83px;
+  background: url(/bug.c9fff7d0.png) no-repeat;
+  position: absolute;
+  transform: rotate(-22deg);
+  bottom: 10px;
+  left: 778px;
+  animation: hands 0.85s ease-out infinite;
+}
+
+#hand_two {
+  left: 830px;
+  transform: rotateY(-180deg) rotateZ(-2deg);
+  animation: handstwo 0.85s ease-out infinite;
+}
+#github {
+  width: 48px;
+  height: 48px;
+  background: url(/github.87a5af48.png) no-repeat;
+  position: absolute;
+  right: 332px;
+  bottom: 32px;
+}
+#link {
+  width: 42px;
+  height: 42px;
+  background: url(/link4.27d1f48b.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 332px;
+  bottom: 32px;
+}
+#stacks {
+  width: 262px;
+  height: 448px;
+  text-align: center;
+  background: rgba(160, 196, 77, 0.51);
+  position: absolute;
+  right: 0;
+}
+#stacks h1 {
+  font-family: "KreepTown";
+  font-size: 24px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  clear: both;
+  margin-top: 47px;
+  margin-bottom: 8px;
+}
+
+.wrapperStack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-left: 2px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.wrapperStack:first-child {
+  margin-right: 6px;
+}
+.wrapperStack span {
+  font-family: "KreepTown";
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.stack {
+  display: flex;
+  align-items: center;
+  width: 245px;
+  height: 38px;
+  padding-left: 4px;
+  margin-right: 2px;
+  margin-left: 3px;
+  background-color: rgba(23, 24, 24, 0.67);
+}
+.icon {
+  width: 36px;
+  height: 30px;
+  margin-right: 8px;
+}
+.icon_js {
+  background: url(/js.800817a2.jpg) no-repeat;
+  background-size: contain;
+}
+.icon_node {
+  background: url(/node.49bece38.png) no-repeat;
+  background-size: contain;
+}
+.icon_express {
+  background: url(/express.6576637f.png) no-repeat;
+  background-size: contain;
+}
+.icon_ts {
+  background: url(/ts.30424785.jpg) no-repeat;
+  background-size: contain;
+}
+.icon_react {
+  background: url(/react.498579ad.png) no-repeat;
+  background-size: contain;
+}
+.icon_pwa {
+  background: url(/pwa.327ef8a6.png) no-repeat center;
+  background-size: contain;
+}
+.icon_php {
+  background: url(/php.4a69d658.png) no-repeat;
+  background-size: contain;
+}
+.icon_mysql {
+  background: url(/mysql.0108374b.jpg) no-repeat;
+  background-size: contain;
+}
+.icon_mongo {
+  background: url(/mongo.85ead7a1.jpg) no-repeat;
+  background-size: contain;
+}
+.icon_firebase {
+  background: url(/firebase.b185f0bf.png) no-repeat;
+  background-size: contain;
+}
+.icon_graphql {
+  background: url(/GraphQL.5189d76b.png) no-repeat;
+  background-size: contain;
+}
+#checkAnimation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 132px;
+  height: 32px;
+  font-family: "ZOMBIESSTATION";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding-left: 34px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.check {
+  background: url(/select.cabc9244.png) no-repeat top left;
+}
+.uncheck {
+  background: url(/unselect.b62a2648.png) no-repeat top left;
+}
+
+/* UNDEGROUND */
+
+#wrapper_undeground {
+  width: 100%;
+  height: 460px;
+  background: #60321a;
+}
+#undeground {
+  width: 1300px;
+  height: 460px;
+  margin: 0 auto;
+  background: url(/undeground.b60eea37.jpg) no-repeat;
+  position: relative;
+}
+#dev {
+  width: 92px;
+  height: 110px;
+  background: url(/dev.0d127b91.png) no-repeat;
+  position: absolute;
+  right: 486px;
+  top: 100px;
+}
+.leg {
+  width: 25px;
+  height: 59px;
+  background: url(/leg.e563918e.png) no-repeat;
+  position: absolute;
+  right: 499px;
+  top: 198px;
+  transform-origin: top;
+  animation: leftLeg 4s linear infinite;
+}
+#leg_two {
+  right: 539px;
+  animation: rightLeg 4s linear infinite;
+}
+#laptop {
+  width: 73px;
+  height: 45px;
+  background: url(/laptop.855d7aa0.jpg) no-repeat;
+  position: absolute;
+  right: 488px;
+  top: 159px;
+  z-index: 2;
+}
+#wifi {
+  width: 34px;
+  height: 48px;
+  background: url(/wifi.d08d1bed.svg) no-repeat bottom;
+  background-size: contain;
+  position: absolute;
+  z-index: 3;
+  right: 516px;
+  top: 153px;
+}
+#wrapper_infoBlocks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+}
+.infoBlock {
+  width: 420px;
+  height: 440px;
+  background-color: rgba(0, 0, 0, 0.71);
+  margin-top: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+.infoBlock h1,
+.frontend h1 {
+  color: #e8e3e3;
+  font-family: "KreepTown";
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  padding-bottom: 28px;
+}
+.contact p {
+  padding-right: 5px;
+  text-align: right;
+  line-height: 45px;
+}
+.contact p span {
+  text-decoration: underline;
+}
+
+.contact h1 {
+  margin: 0 auto;
+}
+.foto {
+  width: 68px;
+  height: 70px;
+  position: absolute;
+  right: 0px;
+  top: -13px;
+  background: url("/clip.401877e2.png") no-repeat;
+}
+.infostring {
+  color: #dfb200;
+  font-size: 26px;
+  font-family: "B52";
+}
+.frontend {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  margin-bottom: 32px;
+  padding-left: 10px;
+}
+.frontend h1 {
+  color: #3e8216;
+  font-size: 24px;
+  text-decoration: none;
+  padding-bottom: 0px;
+}
+.frontend ul {
+  margin-top: 16px;
+}
+.frontend ul > li {
+  display: block;
+  margin-bottom: 10px;
+  color: #8612f6;
+  font-size: 18px;
+  font-family: "KreepTown";
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.wizard {
+  width: 186px;
+  height: 129px;
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  will-change: contents;
+  animation: wizard 0.4s steps(5) infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes wizard {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -930px;
+  }
+}
+
+@keyframes portal {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes portalAppearing {
+  from {
+    transform: scale(0) rotate(0deg);
+  }
+  to {
+    transform: scale(1) rotate(360deg);
+  }
+}
+@keyframes golem {
+  0.0000% {
+    transform: scale(0) translate(-11px, -27px);
+  }
+  12.3352% {
+    transform: scale(1) translate(8.9px, -27.6px);
+  }
+  29.5695% {
+    transform: translate(36.6px, -24.5px);
+  }
+  37.4956% {
+    transform: translate(48.9px, -20.8px);
+  }
+  50.5531% {
+    transform: translate(67.2px, -10.5px);
+  }
+  61.5833% {
+    transform: translate(79.6px, 2.3px);
+  }
+  80.6920% {
+    transform: translate(96.9px, 27.9px);
+  }
+  89.1015% {
+    transform: translate(107px, 36.9px);
+  }
+  93.5344% {
+    transform: translate(113.6px, 39.7px);
+  }
+  100.0000% {
+    transform: translate(124px, 41px);
+  }
+}
+@keyframes golemIceRunning {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -694px;
+  }
+}
+
+@keyframes golemSwampRunning {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -682px;
+  }
+}
+
+@keyframes golemLavaRunning {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -713px;
+  }
+}
+@keyframes goblinRunning {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -713px;
+  }
+}
+@keyframes orcRunning {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -713px;
+  }
+}
+@keyframes trollRunning {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -713px;
+  }
+}
+@keyframes reaperRunning {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -808px;
+  }
+}
+@keyframes fallenAngelRunning {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -713px;
+  }
+}
+@keyframes fallenAngelTwoRunning {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -704px;
+  }
+}
+
+@keyframes fallenAngelTwo {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -707px;
+  }
+}
+
+@keyframes golemMove {
+  to {
+    left: 541px;
+  }
+}
+
+@keyframes golemJump {
+  0.0000% {
+    left: 541px;
+    bottom: 80px;
+  }
+  16.2363% {
+    left: 587.2px;
+    bottom: 116px;
+  }
+  29.9265% {
+    left: 629.2px;
+    bottom: 142px;
+  }
+  44.1312% {
+    left: 675.4px;
+    bottom: 164px;
+  }
+  50.8977% {
+    left: 698.5px;
+    bottom: 172px;
+  }
+  57.2102% {
+    left: 720.7px;
+    bottom: 177px;
+  }
+  62.9763% {
+    left: 741.5px;
+    bottom: 178.6px;
+  }
+  68.2330% {
+    left: 760.2px;
+    bottom: 175.3px;
+  }
+  73.2381% {
+    left: 776.2px;
+    bottom: 166.8px;
+  }
+  75.8154% {
+    left: 782.9px;
+    bottom: 160.4px;
+  }
+  79.9939% {
+    left: 791.3px;
+    bottom: 147.9px;
+  }
+  83.1248% {
+    left: 795.7px;
+    bottom: 137.4px;
+  }
+  90.5526% {
+    left: 800.9px;
+    bottom: 106.1px;
+  }
+  100.0000% {
+    left: 801px;
+    bottom: 40px;
+  }
+}
+
+@keyframes golemRotate {
+  0% {
+    transform: rotateY(-180deg);
+    bottom: -10px;
+  }
+  100% {
+    transform: rotateY(-180deg);
+    bottom: -200px;
+  }
+}
+@keyframes rotateSign {
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes sizeReduction {
+  from {
+    left: 801px;
+    bottom: -200px;
+  }
+  to {
+    left: 605px;
+    bottom: -200px;
+  }
+}
+@keyframes reduction {
+  from {
+    left: 801px;
+    bottom: -200px;
+    transform: scale(1) rotateY(-180deg);
+  }
+
+  to {
+    left: 675px;
+    bottom: -200px;
+    transform: scale(0) rotateY(-180deg);
+  }
+}
+
+@keyframes hands {
+  0% {
+    bottom: 8px;
+  }
+  50% {
+    bottom: 25px;
+  }
+  100% {
+    bottom: 8px;
+  }
+}
+
+@keyframes handstwo {
+  0% {
+    bottom: 8px;
+  }
+  10% {
+    bottom: 25px;
+  }
+  50% {
+    bottom: 8px;
+  }
+  100% {
+    bottom: 8px;
+  }
+}
+
+@keyframes ghost {
+  0% {
+    bottom: 106px;
+  }
+  50% {
+    bottom: 83px;
+  }
+  100% {
+    bottom: 106px;
+  }
+}
+
+@keyframes leftLeg {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rightLeg {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bounceInUp {
+  100% {
+    transform: rotate(360deg);
+    bottom: 240px;
+  }
+}
+@keyframes bounceInUp_link {
+  100% {
+    transform: rotate(360deg);
+    bottom: 180px;
+  }
+}
+
+@keyframes pulse_animation {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.18);
+  }
+  50% {
+    transform: scale(1.28);
+  }
+  60% {
+    transform: scale(1.18);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* WEB FONTS */
+
+@font-face {
+  font-family: "KreepTown";
+  src: url("/KreepTown.25b3a7d3.eot?#iefix") format("embedded-opentype"),
+    url("/KreepTown.d4effa9e.woff") format("woff"),
+    url("/KreepTown.6c76ade9.ttf") format("truetype"),
+    url("/KreepTown.6230b60e.svg#KreepTown") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ZOMBIESSTATION";
+  src: url("/ZOMBIESSTATION.d56de1f0.eot?#iefix") format("embedded-opentype"),
+    url("/ZOMBIESSTATION.54493a18.woff") format("woff"),
+    url("/ZOMBIESSTATION.26d988f5.ttf") format("truetype"),
+    url("/ZOMBIESSTATION.be1530ba.svg#ZOMBIESSTATION") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "B52";
+  src: url("/b52.79ef4533.eot");
+  src: url("/b52.93b32e9d.woff") format("woff"), url("/b52.ae3f4a77.ttf") format("truetype"),
+    url("/b52.d43f3201.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*# sourceMappingURL=/indexPC.e686e9d6.css.map */
