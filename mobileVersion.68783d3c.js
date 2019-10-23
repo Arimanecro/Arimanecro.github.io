@@ -34215,12 +34215,30 @@ Object.defineProperty(exports, "__esModule", {
 
 const react_1 = __importDefault(require("react"));
 
+const styled_components_1 = require("styled-components");
+
+const Style = styled_components_1.createGlobalStyle`
+#about_portfolio {
+    color: #14dcb7;
+      text-align: left;
+      font-family: "KreepTown";
+      font-size: 21px;
+      line-height: 32px;
+      padding: 0 10px;
+  }
+  #about_portfolio > li {
+    margin-bottom: 20px;
+  }
+`;
+
 exports.default = () => {
-  return react_1.default.createElement("div", {
+  return react_1.default.createElement(react_1.default.Fragment, null, react_1.default.createElement(Style, null), react_1.default.createElement("div", {
     className: "infoBlock"
-  }, react_1.default.createElement("h1", null, "about portfolio"));
+  }, react_1.default.createElement("h1", null, "about portfolio"), react_1.default.createElement("ul", {
+    id: "about_portfolio"
+  }, react_1.default.createElement("li", null, "(1) - Current Portfolio"), react_1.default.createElement("li", null, react_1.default.createElement("span", null, "(2-4, 6)"), " - The same simple e-shop, but difference stacks"), react_1.default.createElement("li", null, "(5) - Goblin Slider(carousel). My first JS app :)"), react_1.default.createElement("li", null, "(7) - Thematic (decicated to Ancient Egypt Gods) PHP Framework"))));
 };
-},{"react":"node_modules/react/index.js"}],"public/img/clip.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"public/img/clip.png":[function(require,module,exports) {
 module.exports = "/clip.401877e2.png";
 },{}],"src/mobileVersion/components/categories/contacts.tsx":[function(require,module,exports) {
 "use strict";
@@ -34796,7 +34814,7 @@ const github_png_1 = __importDefault(require("/public/img/github.png"));
 
 const link_png_1 = __importDefault(require("/public/img/link.png"));
 
-let stacks = [["react", "ts", "pwa", "https://github.com/Arimanecro/111--https://expressjs-roboshop.herokuapp.com/"], ["express", "mongo", "firebase", "https://github.com/Arimanecro/666"], ["node", "mongo", "https://github.com/Arimanecro/555"], ["react", "ts", "firebase", "https://github.com/Arimanecro/444"], ["php", "mysql", "https://github.com/Arimanecro/333"], ["js", "https://github.com/Arimanecro/222"], ["php", "https://github.com/Arimanecro/ExpressRoboShop"]];
+let stacks = [["react", "ts", "pwa", "https://github.com/Arimanecro/MyPortfolio"], ["express", "graphql", "mongo", "firebase", "https://github.com/Arimanecro/ExpressRoboShop--https://expressjs-roboshop.herokuapp.com"], ["node", "mongo", "pwa", "https://github.com/Arimanecro/RoboshopNode--https://nodejs-roboshop.herokuapp.com"], ["react", "ts", "firebase", "https://github.com/Arimanecro/ReactRoboShop--https://react-roboshop.000webhostapp.com"], ["js", "https://github.com/Arimanecro/GoblinSlider--https://arimanecro.github.io/goblin"], ["php", "mysql", "https://github.com/Arimanecro/RoboshopPantheon--https://pantheon-roboshop.herokuapp.com"], ["php", "https://github.com/Arimanecro/Pantheon--https://pantheon-framework.herokuapp.com/"]];
 const Style = styled_components_1.createGlobalStyle`
     .wrapperStack {
         display: flex;
@@ -35327,7 +35345,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51500" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50041" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -280,7 +280,7 @@ body {
     height:710px;
     position: relative;
     overflow: hidden;
-    background: url("img/cavern.png") no-repeat;
+    background: url("img/Cavern.png") no-repeat;
     transition: all ease 3s 0s;
     z-index: 1;
 }

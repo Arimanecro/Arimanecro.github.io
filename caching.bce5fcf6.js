@@ -127,14 +127,14 @@ exports.Caching = void 0;
 
 const Caching = () => {
   let mobileFiles = ['axes.e5473b84.png', 'b52.79ef4533.eot', 'b52.93b32e9d.woff', 'b52.ae3f4a77.ttf', 'b52.d43f3201.svg', 'btnclose.2955c178.png', 'caching.bce5fcf6.js', 'clip.401877e2.png', 'crown.8cb43fb9.png', 'express.6576637f.png', 'firebase.b185f0bf.png', 'pwa.327ef8a6.png', 'GraphQL.5189d76b.png', 'grass.b1731966.jpg', 'helmet.d0a6d10e.png', 'js.800817a2.jpg', 'KreepTown.25b3a7d3.eot', 'KreepTown.6230b60e.svg', 'KreepTown.6c76ade9.ttf', 'KreepTown.d4effa9e.woff', 'list.7c40af47.png', 'mobileVersion.68783d3c.css', 'mobileVersion.68783d3c.js', 'mongo.85ead7a1.jpg', 'mysql.0108374b.jpg', 'node.49bece38.png', 'php.4a69d658.png', 'react.498579ad.png', 'start.5aff1fc7.js', 'sw.js', 'swREG.374738ec.js', 'ts.30424785.jpg', 'ZOMBIESSTATION.26d988f5.ttf', 'ZOMBIESSTATION.54493a18.woff', 'ZOMBIESSTATION.be1530ba.svg', 'ZOMBIESSTATION.d56de1f0.eot'];
-  let pcFiles = ['appearing.8ed6ef99.png', 'appearing.b6889ca1.png', 'appearing.fa2ecb85.png', 'attack.69639980.png', 'attack.b4f4296b.png', 'attack.c355eb66.png', 'b52.79ef4533.eot', 'b52.93b32e9d.woff', 'b52.ae3f4a77.ttf', 'b52.d43f3201.svg', 'bg_best.881e48c2.png', 'caching.bce5fcf6.js', 'clip.401877e2.png', 'coffin.1ef27411.png', 'dev.0d127b91.png', 'express.6576637f.png', 'fallenangel_one_running.7555c4b7.png', 'firebase.b185f0bf.png', 'pwa.327ef8a6.png', 'ghost.9fa94348.png', 'github.87a5af48.png', 'goblin_running.ee5ae97d.png', 'golem_ice_running.a3f43e26.png', 'golem_lava_running.a37c9019.png', 'golem_swamp_running.29c21a58.png', 'GraphQL.5189d76b.png', 'grass.8ea66717.jpg', 'grass.b1731966.jpg', 'idle.2ceac37f.png', 'idle.a8ed585c.png', 'idle.d44e1fc4.png', 'indexPC.e686e9d6.css', 'indexPC.e686e9d6.js', 'js.800817a2.jpg', 'KreepTown.25b3a7d3.eot', 'KreepTown.6230b60e.svg', 'KreepTown.6c76ade9.ttf', 'KreepTown.d4effa9e.woff', 'laptop.855d7aa0.jpg', 'leg.e563918e.png', 'list.7c40af47.png', 'mongo.85ead7a1.jpg', 'mysql.0108374b.jpg', 'node.49bece38.png', 'orc_running.f55fb520.png', 'php.4a69d658.png', 'portal.500dc5af.png', 'react.498579ad.png', 'reaper_running.2b517245.png', 'select.cabc9244.png', 'start.5aff1fc7.js', 'sw.js', 'swREG.374738ec.js', 'troll_running.598607d7.png', 'ts.30424785.jpg', 'undeground.b60eea37.jpg', 'unselect.b62a2648.png', 'wifi.d08d1bed.svg', 'ZOMBIESSTATION.26d988f5.ttf', 'ZOMBIESSTATION.54493a18.woff', 'ZOMBIESSTATION.be1530ba.svg', 'ZOMBIESSTATION.d56de1f0.eot']; //let files = (localStorage.device.includes('mobile')) ? mobileFiles : pcFiles;
+  let pcFiles = ['appearing.8ed6ef99.png', 'appearing.b6889ca1.png', 'appearing.fa2ecb85.png', 'attack.69639980.png', 'attack.b4f4296b.png', 'attack.c355eb66.png', 'b52.79ef4533.eot', 'b52.93b32e9d.woff', 'b52.ae3f4a77.ttf', 'b52.d43f3201.svg', 'bg_best.881e48c2.png', 'caching.bce5fcf6.js', 'clip.401877e2.png', 'coffin.1ef27411.png', 'dev.0d127b91.png', 'express.6576637f.png', 'fallenangel_one_running.7555c4b7.png', 'firebase.b185f0bf.png', 'pwa.327ef8a6.png', 'ghost.9fa94348.png', 'github.87a5af48.png', 'goblin_running.ee5ae97d.png', 'golem_ice_running.a3f43e26.png', 'golem_lava_running.a37c9019.png', 'golem_swamp_running.29c21a58.png', 'GraphQL.5189d76b.png', 'grass.8ea66717.jpg', 'grass.b1731966.jpg', 'idle.2ceac37f.png', 'idle.a8ed585c.png', 'idle.d44e1fc4.png', 'indexPC.e686e9d6.css', 'indexPC.e686e9d6.js', 'js.800817a2.jpg', 'KreepTown.25b3a7d3.eot', 'KreepTown.6230b60e.svg', 'KreepTown.6c76ade9.ttf', 'KreepTown.d4effa9e.woff', 'laptop.855d7aa0.jpg', 'leg.e563918e.png', 'list.7c40af47.png', 'mongo.85ead7a1.jpg', 'mysql.0108374b.jpg', 'node.49bece38.png', 'orc_running.f55fb520.png', 'php.4a69d658.png', 'portal.500dc5af.png', 'react.498579ad.png', 'reaper_running.2b517245.png', 'select.cabc9244.png', 'start.5aff1fc7.js', 'sw.js', 'swREG.374738ec.js', 'troll_running.598607d7.png', 'ts.30424785.jpg', 'up_scroll3.8e288ea9.png', 'down_scroll.e21fd408.png', 'undeground.b60eea37.jpg', 'unselect.b62a2648.png', 'wifi.d08d1bed.svg', 'ZOMBIESSTATION.26d988f5.ttf', 'ZOMBIESSTATION.54493a18.woff', 'ZOMBIESSTATION.be1530ba.svg', 'ZOMBIESSTATION.d56de1f0.eot'];
+  let files = localStorage.device.includes('mobile') ? mobileFiles : pcFiles; //let files = [];
 
-  let files = [];
   const version = 1;
   caches.open(`static-v${version}`).then(cache => cache.addAll(files).then(() => {
     localStorage.setItem('caching', 'true');
     console.log('Assets added to cache');
-  }).then(() => require("_bundle_loader")(require.resolve('./mobileVersion/index')).then(mod => mod.Portfolio)).then(() => deleteSpinner()).catch(err => console.log('Error while fetching assets', err)));
+  }).then(() => import(localStorage.device).then(mod => mod.Portfolio)).then(() => deleteSpinner()).catch(err => console.log('Error while fetching assets', err)));
 };
 
 exports.Caching = Caching;
@@ -142,7 +142,7 @@ exports.Caching = Caching;
 function deleteSpinner() {
   document.getElementById('spinner').remove();
 }
-},{"_bundle_loader":"node_modules/parcel-bundler/src/builtins/bundle-loader.js","./mobileVersion/index":[["mobileVersion.68783d3c.js","src/mobileVersion/index.tsx"],"mobileVersion.68783d3c.js.map",["grass.b1731966.jpg","src/mobileVersion/public/img/grass.jpg"],["btnclose.2955c178.png","src/mobileVersion/public/img/btnclose.png"],["clip.401877e2.png","public/img/clip.png"],["js.800817a2.jpg","public/img/signs/js.jpg"],["node.49bece38.png","public/img/signs/node.png"],["express.6576637f.png","public/img/signs/express.png"],["ts.30424785.jpg","public/img/signs/ts.jpg"],["pwa.327ef8a6.png","public/img/signs/pwa.png"],["mysql.0108374b.jpg","public/img/signs/mysql.jpg"],["react.498579ad.png","public/img/signs/react.png"],["firebase.b185f0bf.png","public/img/signs/firebase.png"],["php.4a69d658.png","public/img/signs/php.png"],["mongo.85ead7a1.jpg","public/img/signs/mongo.jpg"],["graphql.c001ee64.png","public/img/signs/graphql.png"],["github.87a5af48.png","public/img/github.png"],["link.94958971.png","public/img/link.png"],["axes.e5473b84.png","src/mobileVersion/public/img/axes.png"],["crown.8cb43fb9.png","src/mobileVersion/public/img/crown.png"],["list.7c40af47.png","src/mobileVersion/public/img/list.png"],["helmet.d0a6d10e.png","src/mobileVersion/public/img/helmet.png"],"mobileVersion.68783d3c.css","src/mobileVersion/index.tsx"]}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -170,7 +170,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51500" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50058" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -345,164 +345,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"node_modules/parcel-bundler/src/builtins/bundle-loader.js":[function(require,module,exports) {
-var getBundleURL = require('./bundle-url').getBundleURL;
-
-function loadBundlesLazy(bundles) {
-  if (!Array.isArray(bundles)) {
-    bundles = [bundles];
-  }
-
-  var id = bundles[bundles.length - 1];
-
-  try {
-    return Promise.resolve(require(id));
-  } catch (err) {
-    if (err.code === 'MODULE_NOT_FOUND') {
-      return new LazyPromise(function (resolve, reject) {
-        loadBundles(bundles.slice(0, -1)).then(function () {
-          return require(id);
-        }).then(resolve, reject);
-      });
-    }
-
-    throw err;
-  }
-}
-
-function loadBundles(bundles) {
-  return Promise.all(bundles.map(loadBundle));
-}
-
-var bundleLoaders = {};
-
-function registerBundleLoader(type, loader) {
-  bundleLoaders[type] = loader;
-}
-
-module.exports = exports = loadBundlesLazy;
-exports.load = loadBundles;
-exports.register = registerBundleLoader;
-var bundles = {};
-
-function loadBundle(bundle) {
-  var id;
-
-  if (Array.isArray(bundle)) {
-    id = bundle[1];
-    bundle = bundle[0];
-  }
-
-  if (bundles[bundle]) {
-    return bundles[bundle];
-  }
-
-  var type = (bundle.substring(bundle.lastIndexOf('.') + 1, bundle.length) || bundle).toLowerCase();
-  var bundleLoader = bundleLoaders[type];
-
-  if (bundleLoader) {
-    return bundles[bundle] = bundleLoader(getBundleURL() + bundle).then(function (resolved) {
-      if (resolved) {
-        module.bundle.register(id, resolved);
-      }
-
-      return resolved;
-    }).catch(function (e) {
-      delete bundles[bundle];
-      throw e;
-    });
-  }
-}
-
-function LazyPromise(executor) {
-  this.executor = executor;
-  this.promise = null;
-}
-
-LazyPromise.prototype.then = function (onSuccess, onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.then(onSuccess, onError);
-};
-
-LazyPromise.prototype.catch = function (onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.catch(onError);
-};
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/parcel-bundler/src/builtins/loaders/browser/css-loader.js":[function(require,module,exports) {
-module.exports = function loadCSSBundle(bundle) {
-  return new Promise(function (resolve, reject) {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = bundle;
-
-    link.onerror = function (e) {
-      link.onerror = link.onload = null;
-      reject(e);
-    };
-
-    link.onload = function () {
-      link.onerror = link.onload = null;
-      resolve();
-    };
-
-    document.getElementsByTagName('head')[0].appendChild(link);
-  });
-};
-},{}],"node_modules/parcel-bundler/src/builtins/loaders/browser/js-loader.js":[function(require,module,exports) {
-module.exports = function loadJSBundle(bundle) {
-  return new Promise(function (resolve, reject) {
-    var script = document.createElement('script');
-    script.async = true;
-    script.type = 'text/javascript';
-    script.charset = 'utf-8';
-    script.src = bundle;
-
-    script.onerror = function (e) {
-      script.onerror = script.onload = null;
-      reject(e);
-    };
-
-    script.onload = function () {
-      script.onerror = script.onload = null;
-      resolve();
-    };
-
-    document.getElementsByTagName('head')[0].appendChild(script);
-  });
-};
-},{}],0:[function(require,module,exports) {
-var b=require("node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("css",require("node_modules/parcel-bundler/src/builtins/loaders/browser/css-loader.js"));b.register("js",require("node_modules/parcel-bundler/src/builtins/loaders/browser/js-loader.js"));b.load([]).then(function(){require("src/caching.js");});
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/caching.js"], null)
 //# sourceMappingURL=/caching.bce5fcf6.js.map

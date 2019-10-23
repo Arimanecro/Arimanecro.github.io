@@ -62,7 +62,7 @@ a:active {
   position: absolute;
   right: 262px;
   bottom: 33px;
-  z-index: 2;
+  z-index: 3;
 }
 #ghost {
   width: 77px;
@@ -81,7 +81,7 @@ a:active {
   height: 39px;
   background: url(/grass.8ea66717.jpg);
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   bottom: 0px;
 }
 
@@ -348,10 +348,57 @@ a:active {
   text-transform: capitalize;
   letter-spacing: 3px;
   clear: both;
-  margin-top: 47px;
-  margin-bottom: 8px;
+  margin-top: 41px;
+  margin-bottom: 2px;
 }
 
+#wrappListStack {
+  width:262px;
+  height: 290px;
+  overflow: hidden;
+}
+#scrollBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:262px;
+  height: inherit;
+  float: right;
+  position: relative;
+}
+#wrappBtns {
+  width: 80px; 
+  height: 24px; 
+  margin: 0 auto;
+  position: relative;
+}
+#up {
+  width: 24px;
+  height: 24px;
+  float: left;
+  padding: 0px;
+  border: none;
+  background: url('/up_scroll3.8e288ea9.png');
+  background-size: contain;
+  outline: none;
+  position: absolute;
+  z-index: 7;
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+#down {
+  width: 24px;
+  height: 24px;
+  float: right;
+  padding: 0px;
+  border: none;
+  background: url('/down_scroll.e21fd408.png');
+  background-size: contain;
+  outline: none;
+  transform: rotate(90deg);
+  z-index: 7;
+  cursor: pointer;
+}
 .wrapperStack {
   display: flex;
   justify-content: center;
@@ -360,6 +407,7 @@ a:active {
   height: auto;
   padding-left: 2px;
   margin-bottom: 12px;
+  transition: all ease 0.35s;
   cursor: pointer;
 }
 .wrapperStack:first-child {
@@ -512,6 +560,17 @@ a:active {
   justify-content: space-evenly;
   width: 100%;
   height: auto;
+}
+#about_portfolio {
+  color: #14dcb7;
+    text-align: left;
+    font-family: "KreepTown";
+    font-size: 21px;
+    line-height: 32px;
+    padding: 0 10px;
+}
+#about_portfolio > li {
+  margin-bottom: 20px;
 }
 .infoBlock {
   width: 420px;
