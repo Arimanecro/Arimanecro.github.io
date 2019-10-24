@@ -132,8 +132,7 @@ const Caching = () => {
 
   const version = 1;
   caches.open(`static-v${version}`).then(cache => cache.addAll(files).then(() => {
-    localStorage.setItem('caching', 'true');
-    console.log('Assets added to cache');
+    localStorage.setItem('caching', 'true'); //console.log('Assets added to cache')
   }).then(() => import(localStorage.device).then(mod => mod.Portfolio)).then(() => deleteSpinner()).catch(err => console.log('Error while fetching assets', err)));
 };
 
@@ -170,7 +169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51197" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50979" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -34766,7 +34766,7 @@ exports.default = () => {
       return react_1.default.createElement(react_1.default.Fragment, null);
     } else if (settings.getLinks === false && settings.bounceInUp === true) {
       let link = settings.link.split('--');
-      return react_1.default.createElement(react_1.default.Fragment, null, "$ ", link[1] ? react_1.default.createElement("a", {
+      return react_1.default.createElement(react_1.default.Fragment, null, link[1] ? react_1.default.createElement("a", {
         href: link[1],
         target: "_blank",
         id: "link",
@@ -34785,7 +34785,7 @@ exports.default = () => {
   } else {
     if (settings.getLinks) {
       let link = settings.link.split('--');
-      return react_1.default.createElement(react_1.default.Fragment, null, "$", link[1] ? react_1.default.createElement("a", {
+      return react_1.default.createElement(react_1.default.Fragment, null, link[1] ? react_1.default.createElement("a", {
         href: link[1],
         target: "_blank",
         id: "link",
@@ -34878,6 +34878,9 @@ exports.default = () => {
     return react_1.default.createElement("div", {
       key: shortid.generate(),
       className: "wrapperStack",
+      style: key === 1 ? {
+        marginTop: localStorage.first ? localStorage.first : '0px'
+      } : null,
       id: key === 1 ? "first" : null,
       "data-stack": `${stack.toString()}`,
       onClick: e => {
@@ -34952,8 +34955,10 @@ function up() {
       count1 -= 6;
       count2 += 6;
       first.style.marginTop = String(Number(first.style.marginTop.slice(0, -2)) + Number("-300")) + "px";
+      localStorage.first = first.style.marginTop;
     } else {
       first.style.marginTop = String(Number(first.style.marginTop.slice(0, -2)) + Number(-`${count1 * 50}`)) + "px";
+      localStorage.first = first.style.marginTop;
       count2 += count1;
       count1 = 0;
     }
@@ -34966,8 +34971,10 @@ function down() {
       count1 += 6;
       count2 -= 6;
       first.style.marginTop = String(Number(first.style.marginTop.slice(0, -2)) + Number("300")) + "px";
+      localStorage.first = first.style.marginTop;
     } else {
       first.style.marginTop = String(Number(first.style.marginTop.slice(0, -2)) + Number(`${count2 * 50}`)) + "px";
+      localStorage.first = first.style.marginTop;
       count1 += count2;
       count2 = 0;
     }
@@ -34975,9 +34982,19 @@ function down() {
 }
 
 exports.Grass = () => {
+  const checkMargin = () => {
+    let margin = localStorage.first.slice(0, -2);
+    return margin ? document.getElementById("wrappListStack").children.length - 6 - Math.abs(margin / 50) : document.getElementById("wrappListStack").children.length - 6;
+  };
+
+  const checkMargin2 = () => {
+    let margin = localStorage.first.slice(0, -2);
+    return margin ? Math.abs(margin / 50) : 0;
+  };
+
   react_1.useEffect(() => {
-    self.count1 = document.getElementById("wrappListStack").children.length - 6;
-    self.count2 = 0;
+    self.count1 = checkMargin();
+    self.count2 = checkMargin2();
     self.first = document.getElementById("first");
   });
   return react_1.default.createElement("div", {
@@ -35209,6 +35226,7 @@ exports.Portfolio = () => {
     document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend", "<link rel=\"stylesheet\" href=\"./indexPC.e686e9d6.css\" />");
   }
 
+  localStorage.first = "0px";
   return react_1.default.createElement(react_1.default.Fragment, null, react_1.default.createElement(CSS, null), react_1.default.createElement(graveyard_1.default, null), react_1.default.createElement(underground_1.default, null));
 };
 
@@ -35241,7 +35259,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50058" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50165" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

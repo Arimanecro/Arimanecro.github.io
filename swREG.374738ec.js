@@ -127,9 +127,7 @@ exports.ServiceWorkerReg = void 0;
 
 const ServiceWorkerReg = () => {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/sw.js").then(registration => {
-      console.log('Registration successful, scope is:', registration.scope);
-    }).catch(error => console.log('Service worker registration failed, error:', error));
+    navigator.serviceWorker.register("/sw.js").then(registration => console.log('Registration successful, scope is:', registration.scope)).catch(error => console.log('Service worker registration failed, error:', error));
   }
 };
 
@@ -162,7 +160,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51197" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50979" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
