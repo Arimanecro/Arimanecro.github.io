@@ -34236,7 +34236,7 @@ exports.default = () => {
     className: "infoBlock"
   }, react_1.default.createElement("h1", null, "about portfolio"), react_1.default.createElement("ul", {
     id: "about_portfolio"
-  }, react_1.default.createElement("li", null, "(1) - Current Portfolio"), react_1.default.createElement("li", null, react_1.default.createElement("span", null, "(2-4, 6)"), " - The same simple e-shop, but difference stacks"), react_1.default.createElement("li", null, "(5) - Goblin Slider(carousel). My first JS app :)"), react_1.default.createElement("li", null, "(7) - Thematic (decicated to Ancient Egypt Gods) PHP Framework"))));
+  }, react_1.default.createElement("li", null, "(1) - Search Algorithm - Size Does not Matter (SDM)"), react_1.default.createElement("li", null, "(2) - Current Portfolio"), react_1.default.createElement("li", null, react_1.default.createElement("span", null, "(3-5, 7)"), " - The same simple e-shop, but difference stacks"), react_1.default.createElement("li", null, "(6) - Goblin Slider(carousel). My first JS app :)"), react_1.default.createElement("li", null, "(8) - Thematic (decicated to Ancient Egypt Gods) PHP Framework"))));
 };
 },{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"public/img/clip.png":[function(require,module,exports) {
 module.exports = "/clip.401877e2.png";
@@ -34304,6 +34304,8 @@ exports.default = () => {
   }, react_1.default.createElement("span", null, "FIRST NAME:"), " Serghey"), react_1.default.createElement("p", {
     className: "infostring"
   }, react_1.default.createElement("span", null, "LAST NAME:"), " Didac"), react_1.default.createElement("p", {
+    className: "infostring"
+  }, react_1.default.createElement("span", null, "LOCATION: MOLDOVA")), react_1.default.createElement("p", {
     className: "infostring"
   }, "arimanecro@gmail.com")));
 };
@@ -34814,7 +34816,7 @@ const github_png_1 = __importDefault(require("/public/img/github.png"));
 
 const link_png_1 = __importDefault(require("/public/img/link.png"));
 
-let stacks = [["react", "ts", "pwa", "https://github.com/Arimanecro/MyPortfolio"], ["express", "graphql", "mongo", "firebase", "https://github.com/Arimanecro/ExpressRoboShop--https://expressjs-roboshop.herokuapp.com"], ["node", "mongo", "pwa", "https://github.com/Arimanecro/RoboshopNode--https://nodejs-roboshop.herokuapp.com"], ["react", "ts", "firebase", "https://github.com/Arimanecro/ReactRoboShop--https://react-roboshop.000webhostapp.com"], ["js", "https://github.com/Arimanecro/GoblinSlider--https://arimanecro.github.io/goblin"], ["php", "mysql", "https://github.com/Arimanecro/RoboshopPantheon--https://pantheon-roboshop.herokuapp.com"], ["php", "https://github.com/Arimanecro/Pantheon--https://pantheon-framework.herokuapp.com/"]];
+let stacks = [["node", "https://github.com/Arimanecro/SDM"], ["react", "ts", "pwa", "https://github.com/Arimanecro/MyPortfolio"], ["express", "graphql", "mongo", "firebase", "https://github.com/Arimanecro/ExpressRoboShop--https://expressjs-roboshop.herokuapp.com"], ["node", "mongo", "pwa", "https://github.com/Arimanecro/RoboshopNode--https://nodejs-roboshop.herokuapp.com"], ["react", "ts", "firebase", "https://github.com/Arimanecro/ReactRoboShop--https://react-roboshop.000webhostapp.com"], ["js", "https://github.com/Arimanecro/GoblinSlider--https://arimanecro.github.io/goblin"], ["php", "mysql", "https://github.com/Arimanecro/RoboshopPantheon--https://pantheon-roboshop.herokuapp.com"], ["php", "https://github.com/Arimanecro/Pantheon--https://pantheon-framework.herokuapp.com/"]];
 const Style = styled_components_1.createGlobalStyle`
     .wrapperStack {
         display: flex;
@@ -35180,7 +35182,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\dev\\react-portfolio\\public\\wf\\KreepTown.eot":[["KreepTown.25b3a7d3.eot","public/wf/KreepTown.eot"],"public/wf/KreepTown.eot"],"C:\\dev\\react-portfolio\\public\\wf\\KreepTown.woff":[["KreepTown.d4effa9e.woff","public/wf/KreepTown.woff"],"public/wf/KreepTown.woff"],"C:\\dev\\react-portfolio\\public\\wf\\KreepTown.ttf":[["KreepTown.6c76ade9.ttf","public/wf/KreepTown.ttf"],"public/wf/KreepTown.ttf"],"C:\\dev\\react-portfolio\\public\\wf\\KreepTown.svg":[["KreepTown.6230b60e.svg","public/wf/KreepTown.svg"],"public/wf/KreepTown.svg"],"C:\\dev\\react-portfolio\\public\\wf\\ZOMBIESSTATION.eot":[["ZOMBIESSTATION.d56de1f0.eot","public/wf/ZOMBIESSTATION.eot"],"public/wf/ZOMBIESSTATION.eot"],"C:\\dev\\react-portfolio\\public\\wf\\ZOMBIESSTATION.woff":[["ZOMBIESSTATION.54493a18.woff","public/wf/ZOMBIESSTATION.woff"],"public/wf/ZOMBIESSTATION.woff"],"C:\\dev\\react-portfolio\\public\\wf\\ZOMBIESSTATION.ttf":[["ZOMBIESSTATION.26d988f5.ttf","public/wf/ZOMBIESSTATION.ttf"],"public/wf/ZOMBIESSTATION.ttf"],"C:\\dev\\react-portfolio\\public\\wf\\ZOMBIESSTATION.svg":[["ZOMBIESSTATION.be1530ba.svg","public/wf/ZOMBIESSTATION.svg"],"public/wf/ZOMBIESSTATION.svg"],"C:\\dev\\react-portfolio\\public\\wf\\b52.eot":[["b52.79ef4533.eot","public/wf/b52.eot"],"public/wf/b52.eot"],"C:\\dev\\react-portfolio\\public\\wf\\b52.woff":[["b52.93b32e9d.woff","public/wf/b52.woff"],"public/wf/b52.woff"],"C:\\dev\\react-portfolio\\public\\wf\\b52.ttf":[["b52.ae3f4a77.ttf","public/wf/b52.ttf"],"public/wf/b52.ttf"],"C:\\dev\\react-portfolio\\public\\wf\\b52.svg":[["b52.d43f3201.svg","public/wf/b52.svg"],"public/wf/b52.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/mobileVersion/components/menu.tsx":[function(require,module,exports) {
+},{"C:\\Users\\User\\Downloads\\MyPortfolio\\public\\wf\\KreepTown.eot":[["KreepTown.25b3a7d3.eot","public/wf/KreepTown.eot"],"public/wf/KreepTown.eot"],"C:\\Users\\User\\Downloads\\MyPortfolio\\public\\wf\\KreepTown.woff":[["KreepTown.d4effa9e.woff","public/wf/KreepTown.woff"],"public/wf/KreepTown.woff"],"C:\\Users\\User\\Downloads\\MyPortfolio\\public\\wf\\KreepTown.ttf":[["KreepTown.6c76ade9.ttf","public/wf/KreepTown.ttf"],"public/wf/KreepTown.ttf"],"C:\\Users\\User\\Downloads\\MyPortfolio\\public\\wf\\KreepTown.svg":[["KreepTown.6230b60e.svg","public/wf/KreepTown.svg"],"public/wf/KreepTown.svg"],"C:\\Users\\User\\Downloads\\MyPortfolio\\public\\wf\\ZOMBIESSTATION.eot":[["ZOMBIESSTATION.d56de1f0.eot","public/wf/ZOMBIESSTATION.eot"],"public/wf/ZOMBIESSTATION.eot"],"C:\\Users\\User\\Downloads\\MyPortfolio\\public\\wf\\ZOMBIESSTATION.woff":[["ZOMBIESSTATION.54493a18.woff","public/wf/ZOMBIESSTATION.woff"],"public/wf/ZOMBIESSTATION.woff"],"C:\\Users\\User\\Downloads\\MyPortfolio\\public\\wf\\ZOMBIESSTATION.ttf":[["ZOMBIESSTATION.26d988f5.ttf","public/wf/ZOMBIESSTATION.ttf"],"public/wf/ZOMBIESSTATION.ttf"],"C:\\Users\\User\\Downloads\\MyPortfolio\\public\\wf\\ZOMBIESSTATION.svg":[["ZOMBIESSTATION.be1530ba.svg","public/wf/ZOMBIESSTATION.svg"],"public/wf/ZOMBIESSTATION.svg"],"C:\\Users\\User\\Downloads\\MyPortfolio\\public\\wf\\b52.eot":[["b52.79ef4533.eot","public/wf/b52.eot"],"public/wf/b52.eot"],"C:\\Users\\User\\Downloads\\MyPortfolio\\public\\wf\\b52.woff":[["b52.93b32e9d.woff","public/wf/b52.woff"],"public/wf/b52.woff"],"C:\\Users\\User\\Downloads\\MyPortfolio\\public\\wf\\b52.ttf":[["b52.ae3f4a77.ttf","public/wf/b52.ttf"],"public/wf/b52.ttf"],"C:\\Users\\User\\Downloads\\MyPortfolio\\public\\wf\\b52.svg":[["b52.d43f3201.svg","public/wf/b52.svg"],"public/wf/b52.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/mobileVersion/components/menu.tsx":[function(require,module,exports) {
 "use strict";
 
 var __importStar = this && this.__importStar || function (mod) {
@@ -35345,7 +35347,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50041" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49593" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

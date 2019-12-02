@@ -34869,7 +34869,7 @@ const btnAnimation_1 = __importDefault(require("./btnAnimation"));
 
 const shortid = require("shortid");
 
-let stacks = [["react", "ts", "pwa", "https://github.com/Arimanecro/MyPortfolio"], ["express", "graphql", "mongo", "firebase", "https://github.com/Arimanecro/ExpressRoboShop--https://expressjs-roboshop.herokuapp.com"], ["node", "mongo", "pwa", "https://github.com/Arimanecro/RoboshopNode--https://nodejs-roboshop.herokuapp.com"], ["react", "ts", "firebase", "https://github.com/Arimanecro/ReactRoboShop--https://react-roboshop.000webhostapp.com"], ["js", "https://github.com/Arimanecro/GoblinSlider--https://arimanecro.github.io/goblin"], ["php", "mysql", "https://github.com/Arimanecro/RoboshopPantheon--https://pantheon-roboshop.herokuapp.com"], ["php", "https://github.com/Arimanecro/Pantheon--https://pantheon-framework.herokuapp.com/"]];
+let stacks = [["node", "https://github.com/Arimanecro/SDM"], ["react", "ts", "pwa", "https://github.com/Arimanecro/MyPortfolio"], ["express", "graphql", "mongo", "firebase", "https://github.com/Arimanecro/ExpressRoboShop--https://expressjs-roboshop.herokuapp.com"], ["node", "mongo", "pwa", "https://github.com/Arimanecro/RoboshopNode--https://nodejs-roboshop.herokuapp.com"], ["react", "ts", "firebase", "https://github.com/Arimanecro/ReactRoboShop--https://react-roboshop.000webhostapp.com"], ["js", "https://github.com/Arimanecro/GoblinSlider--https://arimanecro.github.io/goblin"], ["php", "mysql", "https://github.com/Arimanecro/RoboshopPantheon--https://pantheon-roboshop.herokuapp.com"], ["php", "https://github.com/Arimanecro/Pantheon--https://pantheon-framework.herokuapp.com/"]];
 
 exports.default = () => {
   let [settings, setSettings] = react_1.useContext(contextSettings_1.ContextSettings);
@@ -34945,8 +34945,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-const react_1 = __importStar(require("react")); //height child = 38px + 12px = 50
-//height parent = 290
+const react_1 = __importStar(require("react")); //height of child = 38px + 12px = 50
+//height of parent = 290
 
 
 function up() {
@@ -35172,7 +35172,7 @@ exports.default = () => {
     className: "infoBlock"
   }, react_1.default.createElement("h1", null, "about portfolio"), react_1.default.createElement("ul", {
     id: "about_portfolio"
-  }, react_1.default.createElement("li", null, "(1) - Current Portfolio"), react_1.default.createElement("li", null, react_1.default.createElement("span", null, "(2-4, 6)"), " - The same simple e-shop, but difference stacks"), react_1.default.createElement("li", null, "(5) - Goblin Slider(carousel). My first JS app :)"), react_1.default.createElement("li", null, "(7) - Thematic (decicated to Ancient Egypt Gods) PHP Framework"))), react_1.default.createElement("div", {
+  }, react_1.default.createElement("li", null, "(1) - Search Algorithm - Size Does not Matter (SDM)"), react_1.default.createElement("li", null, "(2) - Current Portfolio"), react_1.default.createElement("li", null, react_1.default.createElement("span", null, "(3-5, 7)"), " - The same simple e-shop, but difference stacks"), react_1.default.createElement("li", null, "(6) - Goblin Slider(carousel). My first JS app :)"), react_1.default.createElement("li", null, "(8) - Thematic (decicated to Ancient Egypt Gods) PHP Framework"))), react_1.default.createElement("div", {
     className: "infoBlock"
   }, react_1.default.createElement("h1", null, "skills"), react_1.default.createElement("div", {
     className: "frontend"
@@ -35191,6 +35191,8 @@ exports.default = () => {
   }, react_1.default.createElement("span", null, "FIRST NAME:"), " Serghey"), react_1.default.createElement("p", {
     className: "infostring"
   }, react_1.default.createElement("span", null, "LAST NAME:"), " Didac"), react_1.default.createElement("p", {
+    className: "infostring"
+  }, react_1.default.createElement("span", null, "LOCATION: MOLDOVA")), react_1.default.createElement("p", {
     className: "infostring"
   }, "arimanecro@gmail.com")))));
 };
@@ -35259,7 +35261,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50165" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49593" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
