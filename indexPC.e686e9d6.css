@@ -293,6 +293,10 @@ a:active {
   background: url(/firebase.b185f0bf.png) no-repeat;
   background-size: contain;
 }
+.electron {
+  background: url(/electron.7f94c962.png) no-repeat;
+  background-size: contain;
+}
 .mysql {
   background: url(/mysql.0108374b.jpg) no-repeat;
   background-size: contain;
@@ -478,6 +482,10 @@ a:active {
   background: url(/GraphQL.5189d76b.png) no-repeat;
   background-size: contain;
 }
+.icon_electron {
+  background: url(/electron.7f94c962.png) no-repeat;
+  background-size: contain;
+}
 #checkAnimation {
   display: flex;
   justify-content: center;
@@ -504,12 +512,12 @@ a:active {
 
 #wrapper_undeground {
   width: 100%;
-  height: 460px;
+  height: auto;
   background: #60321a;
 }
 #undeground {
   width: 1300px;
-  height: 460px;
+  height: auto;
   margin: 0 auto;
   background: url(/undeground.b60eea37.jpg) no-repeat;
   position: relative;
@@ -574,7 +582,7 @@ a:active {
 }
 .infoBlock {
   width: 420px;
-  height: 440px;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.71);
   margin-top: 10px;
   text-align: center;
