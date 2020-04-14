@@ -1270,7 +1270,7 @@ if (!localStorage.getItem("caching")) {
     module.ServiceWorkerReg();
   }).then(() => require("_bundle_loader")(require.resolve("./caching.js")).then(mod => mod.Caching()));
 } else {
-  require("_bundle_loader")(require.resolve('./mobileVersion/index')).then(mod => mod.Portfolio);
+  require("_bundle_loader")(require.resolve(localStorage.device)).then(mod => mod.Portfolio);
 }
 
 function addSpinner() {
