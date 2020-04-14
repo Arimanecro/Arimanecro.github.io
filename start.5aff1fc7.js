@@ -1270,7 +1270,7 @@ if (!localStorage.getItem("caching")) {
     module.ServiceWorkerReg();
   }).then(() => require("_bundle_loader")(require.resolve("./caching.js")).then(mod => mod.Caching()));
 } else {
-  require("_bundle_loader")(require.resolve(localStorage.device)).then(mod => mod.Portfolio);
+  import(localStorage.device).then(mod => mod.Portfolio);
 }
 
 function addSpinner() {
@@ -1289,7 +1289,7 @@ function addSpinner() {
 // - './mobileVersion/index'
 // - './indexPC'
 // - localStorage.device
-},{"mobile-detect":"node_modules/mobile-detect/mobile-detect.js","_bundle_loader":"node_modules/parcel-bundler/src/builtins/bundle-loader.js","../swREG.js":[["swREG.374738ec.js","swREG.js"],"swREG.374738ec.js.map","swREG.js"],"./caching.js":[["caching.bce5fcf6.js","src/caching.js"],"caching.bce5fcf6.js.map","src/caching.js"],"./mobileVersion/index":[["mobileVersion.68783d3c.js","src/mobileVersion/index.tsx"],"mobileVersion.68783d3c.js.map",["grass.b1731966.jpg","src/mobileVersion/public/img/grass.jpg"],["btnclose.2955c178.png","src/mobileVersion/public/img/btnclose.png"],["clip.401877e2.png","public/img/clip.png"],["js.800817a2.jpg","public/img/signs/js.jpg"],["node.49bece38.png","public/img/signs/node.png"],["express.6576637f.png","public/img/signs/express.png"],["electron.7f94c962.png","public/img/signs/electron.png"],["ts.30424785.jpg","public/img/signs/ts.jpg"],["pwa.327ef8a6.png","public/img/signs/pwa.png"],["mysql.0108374b.jpg","public/img/signs/mysql.jpg"],["react.498579ad.png","public/img/signs/react.png"],["firebase.b185f0bf.png","public/img/signs/firebase.png"],["php.4a69d658.png","public/img/signs/php.png"],["mongo.85ead7a1.jpg","public/img/signs/mongo.jpg"],["graphql.c001ee64.png","public/img/signs/graphql.png"],["github.87a5af48.png","public/img/github.png"],["link.94958971.png","public/img/link.png"],["axes.e5473b84.png","src/mobileVersion/public/img/axes.png"],["crown.8cb43fb9.png","src/mobileVersion/public/img/crown.png"],["list.7c40af47.png","src/mobileVersion/public/img/list.png"],["helmet.d0a6d10e.png","src/mobileVersion/public/img/helmet.png"],"mobileVersion.68783d3c.css","src/mobileVersion/index.tsx"]}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"mobile-detect":"node_modules/mobile-detect/mobile-detect.js","_bundle_loader":"node_modules/parcel-bundler/src/builtins/bundle-loader.js","../swREG.js":[["swREG.374738ec.js","swREG.js"],"swREG.374738ec.js.map","swREG.js"],"./caching.js":[["caching.bce5fcf6.js","src/caching.js"],"caching.bce5fcf6.js.map","src/caching.js"]}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -1317,7 +1317,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57156" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58551" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -1515,27 +1515,7 @@ module.exports = function loadJSBundle(bundle) {
     document.getElementsByTagName('head')[0].appendChild(script);
   });
 };
-},{}],"node_modules/parcel-bundler/src/builtins/loaders/browser/css-loader.js":[function(require,module,exports) {
-module.exports = function loadCSSBundle(bundle) {
-  return new Promise(function (resolve, reject) {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = bundle;
-
-    link.onerror = function (e) {
-      link.onerror = link.onload = null;
-      reject(e);
-    };
-
-    link.onload = function () {
-      link.onerror = link.onload = null;
-      resolve();
-    };
-
-    document.getElementsByTagName('head')[0].appendChild(link);
-  });
-};
 },{}],0:[function(require,module,exports) {
-var b=require("node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("js",require("node_modules/parcel-bundler/src/builtins/loaders/browser/js-loader.js"));b.register("css",require("node_modules/parcel-bundler/src/builtins/loaders/browser/css-loader.js"));
+var b=require("node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("js",require("node_modules/parcel-bundler/src/builtins/loaders/browser/js-loader.js"));
 },{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0,"src/start.js"], null)
 //# sourceMappingURL=/start.5aff1fc7.js.map
