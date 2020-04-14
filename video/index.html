@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="./src/start.js" defer></script>
+    <style>
+@font-face {
+    font-family: "KreepTown";
+    src: url("/public/wf/KreepTown.eot?#iefix") format("embedded-opentype"),
+      url("/public/wf/KreepTown.woff") format("woff"),
+      url("/public/wf/KreepTown.ttf") format("truetype"),
+      url("/public/wf/KreepTown.svg#KreepTown") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+    @keyframes knight_attack {
+    from {
+        background-position-x: 0px;
+      }
+      to {
+        background-position-x: -796px;
+      }
+    }
+
+    @keyframes gold_knight_attack {
+          from {
+        background-position-x: 0px;
+      }
+      to {
+        background-position-x: -804px;
+      }
+    }
+
+    @keyframes bloodbug {
+          from {
+        background-position-x: 0px;
+      }
+      to {
+        background-position-x: -942px;
+      }
+    }
+
+    #spinner {
+        display:flex;
+        justify-content:center;
+        align-items: flex-end;
+        width: 288px;
+        height: 168px;
+        position:absolute;
+        z-index:6;
+        left: 0; 
+        right: 0;
+        top: 50%; 
+        margin-left: auto; 
+        margin-right: auto;
+        transform: translateY(-50%);  
+    }
+
+    .character {
+        will-change: transform;
+        z-index: 1;
+        transition: all ease;
+    }
+
+    .knight {
+        width: 111px;
+        height: 118px;
+        left:186px;
+        background: url("/public/img/sprites/knight.png") no-repeat;
+        animation: knight_attack .55s steps(7) infinite;
+    }
+
+    .goldKnight {
+    width: 112px;
+    height: 106px;
+    transform: rotateY(-180deg);
+    background: url("/public/img/sprites/gold_knight.png") no-repeat;
+    animation: gold_knight_attack .55s steps(7) infinite;
+    }
+
+    .bloodBug {
+      width: 74px;
+      height: 80px;
+      margin: 0px -16px 0px -18px;
+      text-align:center;
+      background: url("/public/img/sprites/bloodbug.png") no-repeat;
+      background-position-y: 30px;
+      animation: bloodbug 1.35s steps(12) infinite;
+      z-index: 2;
+    }
+
+    .explosion {
+        width: 74px;
+        height: 51px;
+        background: url("/public/img/sprites/ZUiY.gif") no-repeat;
+        background-size: contain;
+        background-position-y: 0px;
+        z-index:3;
+    }
+
+    .bug {
+      color:#fb2502;
+      font-size:20px;
+      font-family: "KreepTown";
+    }
+
+    .loading {
+      color: #bb02bb;
+      font-size:34px;
+      font-family: "KreepTown";
+      position:absolute;
+      top:0px;
+    }
+    </style>
+    <title>Serghey Didac::Full-Stack Web Dev</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
