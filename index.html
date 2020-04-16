@@ -130,7 +130,13 @@
             messagingSenderId: "477111688010",
             appId: "1:477111688010:web:f62f34c84553f89b7effb3",
             measurementId: "G-EGFZ6815K3"
-  };
+          };
+    
+        firebase.initializeApp(firebaseConfig);
+        const firebaseDB = firebase.firestore();
+        firebaseDB.collection('users').add({info: `${location.href} || ${navigator.languages} || ${navigator.platform}`})
+        firebase.analytics();
+    </script> 
       </script> 
   </body>
 </html>
