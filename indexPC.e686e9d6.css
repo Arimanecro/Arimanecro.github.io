@@ -297,6 +297,10 @@ a:active {
   background: url(/electron.7f94c962.png) no-repeat;
   background-size: contain;
 }
+.ionic {
+  background: url(/ionic.72b925b4.svg) no-repeat;
+  background-size: contain;
+}
 .mysql {
   background: url(/mysql.0108374b.jpg) no-repeat;
   background-size: contain;
@@ -433,6 +437,13 @@ a:active {
   margin-left: 3px;
   background-color: rgba(23, 24, 24, 0.67);
 }
+.pdf {
+  width: 64px;
+  height: 64px;
+  vertical-align: middle;
+  display: inline-block;
+  background: url('/pdf.8ab056b9.png');
+}
 .icon {
   width: 36px;
   height: 30px;
@@ -484,6 +495,10 @@ a:active {
 }
 .icon_electron {
   background: url(/electron.7f94c962.png) no-repeat;
+  background-size: contain;
+}
+.icon_ionic {
+  background: url(/ionic.72b925b4.svg) no-repeat;
   background-size: contain;
 }
 #checkAnimation {

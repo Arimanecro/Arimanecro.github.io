@@ -117,29 +117,5 @@
   </head>
   <body>
     <div id="root"></div>
-    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
-    <script src="./statistic.js"></script>
-        <script>
-        const firebaseConfig = {
-            apiKey: "AIzaSyBEOyreUYsRmtu2Bd9TcFRRDGyo4hmoaHg",
-            authDomain: "statistic-51013.firebaseapp.com",
-            databaseURL: "https://statistic-51013.firebaseio.com",
-            projectId: "statistic-51013",
-            storageBucket: "statistic-51013.appspot.com",
-            messagingSenderId: "477111688010",
-            appId: "1:477111688010:web:f62f34c84553f89b7effb3",
-            measurementId: "G-EGFZ6815K3"
-          };
-    
-          function handleResponse(data) { 
-             const {calling_code, country_name, city, district, ip, isp, latitude, longitude, organization, state_prov, zipcode} = data; 
-             firebaseDB.collection('users').add({calling_code, country_name, city, district, ip, isp, latitude, longitude, organization, state_prov, zipcode})
-            }
-      
-          firebase.initializeApp(firebaseConfig);
-          const firebaseDB = firebase.firestore();
-          ipgeolocationApi.getGeolocation(handleResponse);
-      </script> 
   </body>
 </html>
