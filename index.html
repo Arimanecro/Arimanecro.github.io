@@ -125,7 +125,7 @@
             apiKey: "AIzaSyBEOyreUYsRmtu2Bd9TcFRRDGyo4hmoaHg",
             measurementId: "G-EGFZ6815K3"
           };
-
+          
           function handleResponse(data) { 
              const {calling_code, country_name, city, district, ip, isp, latitude, longitude, organization, state_prov, zipcode} = data; 
              firebaseDB.collection('users').add({calling_code, country_name, city, district, ip, isp, latitude, longitude, organization, state_prov, zipcode})
