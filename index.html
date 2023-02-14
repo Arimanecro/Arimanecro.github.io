@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😈</text></svg>">
+    <title>Serghey Didac::FullStack Developer</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+    <script src="./mobile-detect.js"></script>
+</head>
+
+<body>
+    <script>
+        var setCookie = (cname, cvalue, exdays) => {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            return document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+        var getCookie = (cname) => {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+        }
+        if (!document.cookie) {
+            var md = new MobileDetect(window.navigator.userAgent);
+            if (md.mobile()) {
+                location.replace("/mobile");
+                setCookie("device", "mob", 30);
+            }
+            else {
+                location.replace("/pc");
+                setCookie("device", "pc", 30);
+            }
+        }
+        else {
+            var cookie = getCookie("device");
+            if (cookie === "pc")
+                location.replace("/pc");
+            else
+                location.replace("/mobile");
+        }
+
+    </script>
+</body>
+</html>

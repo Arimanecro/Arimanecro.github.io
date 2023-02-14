@@ -1,0 +1,1 @@
+#ghost:where(.astro-AMJHAUVG){width:77px;height:148px;background:url(/pc/img/ghost.png) no-repeat;position:absolute;right:291px;bottom:106px;transition:all ease-out;animation:ghost 4s linear infinite}@keyframes ghost{0%{bottom:106px}50%{bottom:83px}to{bottom:106px}}
