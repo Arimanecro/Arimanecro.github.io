@@ -1,0 +1,4 @@
+.astro
+**/.astro
+node_modules
+**/node_modules
