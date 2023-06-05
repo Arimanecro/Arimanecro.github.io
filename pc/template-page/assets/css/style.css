@@ -4293,8 +4293,9 @@ ul {
 .single-property-grid {
   background: #fff;
   padding: 35px 50px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   border-radius: 7px;
+  border: #00000047 thin solid;
 }
 
 .single-property-grid h4 {
