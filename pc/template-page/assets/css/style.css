@@ -4257,7 +4257,7 @@ ul {
 }
 
 .property-details-top ul li:first-child {
-  margin-left: 0;
+  /* margin-left: 0; */
 }
 
 .property-details-top ul li:last-child {
