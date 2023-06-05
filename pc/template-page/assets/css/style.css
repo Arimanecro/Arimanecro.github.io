@@ -4253,7 +4253,7 @@ ul {
 .property-details-top ul li {
   display: inline-block;
   list-style: none;
-  margin: 18px 7px;
+  /* margin: 18px 7px; */
 }
 
 .property-details-top ul li:first-child {
