@@ -16,7 +16,7 @@ without fear of moderation or complaints from FB.
 ### ⚔️ How to be a member of the group
 - **You must be a desktop user.** You cannot encrypt or decrypt content in our group if you use Facebook as an app or access Facebook through the mobile version of Google Chrome. The mobile version of Google Chrome does not support extensions.
 - **Download my extension for google chrome** that decrypts and decrypts content (text and images) [--->link for downloading]
-- **Pay 5 euros for a monthly membership**. Why???
+- **Pay 5 euros for a monthly membership**. WTF??? Why???
 	- Amazon server fee.
 	The content is partially encrypted and decrypted there.
 	- Protection from bots and provocateurs. Only interested people will form the community.
