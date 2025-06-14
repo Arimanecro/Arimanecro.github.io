@@ -31,8 +31,7 @@ Here are the reasons:
 	The content is partially encrypted and decrypted there.
 	- 📌 Protection from bots and provocateurs. Only interested people will form the community.
 	- 📌 All extra money will be spent on food for stray cats and dogs. 🐱 🐶 
-- ~~**Pay here**: https://buymeacoffee.com/ [вставить скрин с полем Say something nice ]~~
-~~**Enter your Facebook profile name or or a link to your profile.** in the field - "Say something nice"!~~
+- ~~**Pay here**: https://buymeacoffee.com/~~
 - **Send a request to the group**.
 
 ### ⚙️ How it works
