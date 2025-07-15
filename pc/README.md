@@ -1,12 +1,9 @@
 
-https://docsify-this.net/#/ \
-https://www.facebook.com/groups/688356280232821/manage_rules
-
 - [**About group** ](#-about-group)
 - [**How to be a member of the group**](#-how-to-be-a-member-of-the-group)
 - [**How it works**](#-how-it-works)
 - [**Rules**](#-rules)
-- How to install the plugin
+- [**How to install the plugin**](#-how-to-install-the-plugin)
 - [**How to edit post/comment**](#---how-to-edit-postcomment)
 - [**What is not a bug**](#what-is-not-a-bug)
 
@@ -25,14 +22,25 @@ without fear of moderation or complaints from FB.\
 - **You must be a desktop user.** You cannot encrypt or decrypt content in our group if you use Facebook as an app or access Facebook through the mobile version of Google Chrome. The mobile version of Google Chrome does not support extensions.
 - **[Download my extension for google chrome](https://chromewebstore.google.com/detail/antibook/aindhnpclfmghkneeijdloelinkfbpgk)** that decrypts and decrypts content (text and images)
 - **Pay 5 euros for a monthly membership**. WTF??? Why??? Calm down, calm down!\
-[ *It's FREE now (06.2025), because it is a test period and a small number of users. That is why the load on the computing power of the server processor is insignificant.* ] \
+[ *It's FREE now (07.2025), because it is a test period and a small number of users. That is why the load on the computing power of the server processor is insignificant.* ] \
 Here are the reasons:
 	- 📌 Amazon server fee.
 	The content is partially encrypted and decrypted there.
 	- 📌 Protection from bots and provocateurs. Only interested people will form the community.
 	- 📌 All extra money will be spent on food for stray cats and dogs. 🐱 🐶 
-- ~~**Pay here**: https://buymeacoffee.com/~~
+- ~~**Pay here**: https://buymeacoffee.com/ [вставить скрин с полем Say something nice ]~~
+~~**Enter your Facebook profile name or or a link to your profile.** in the field - "Say something nice"!~~
 - **Send a request to the group**.
+### ⬇️ How to install the plugin
+
+**Intsall:** https://chromewebstore.google.com/detail/antibook/aindhnpclfmghkneeijdloelinkfbpgk  
+If during installation, your antivirus blocks the plugin, then disable the antivirus for the duration of the installation. (*If the plugin contained a virus, then the Chrome web store would not publish it and you would not be able to download it*).   
+After:
+
+![i 0](https://arimanecro.github.io/pc/img/i-0.png)
+![i 2](https://arimanecro.github.io/pc/img/i-2..png)
+![i 3](https://arimanecro.github.io/pc/img/i-3.png)
+![i 4](https://arimanecro.github.io/pc/img/i-5.png)
 
 ### ⚙️ How it works
 
