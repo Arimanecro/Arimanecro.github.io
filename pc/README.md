@@ -37,9 +37,9 @@ Here are the reasons:
 If during installation, your antivirus blocks the plugin, then disable the antivirus for the duration of the installation. (*If the plugin contained a virus, then the Chrome web store would not publish it and you would not be able to download it*).   
 After:
 
-![i 0](https://arimanecro.github.io/pc/img/i-0.png)
-![i 2](https://arimanecro.github.io/pc/img/i-2..png)
-![i 3](https://arimanecro.github.io/pc/img/i-3.png)
+![i 0](https://arimanecro.github.io/pc/img/i-0.png) \
+![i 2](https://arimanecro.github.io/pc/img/i-2..png) \
+![i 3](https://arimanecro.github.io/pc/img/i-3.png) \
 ![i 4](https://arimanecro.github.io/pc/img/i-5.png)
 
 ### ⚙️ How it works
